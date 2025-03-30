@@ -1,0 +1,11 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}

@@ -1,0 +1,30 @@
+/* src/components/Navbar/Navbar.css */
+.navbar {
+  padding: 2rem 5%;
+  background-color: white;
+}
+
+.navbar-content {
+  max-width: 1240px;
+  margin: 0 800px 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
