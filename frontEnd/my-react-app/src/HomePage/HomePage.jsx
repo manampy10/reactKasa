@@ -2,8 +2,9 @@
 import "./HomePage.css";
 import { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
-import Banner from "../components/Banner";
-import Card from "../components/Card";
+import Banner from "../components/Banner/Banner";
+import Card from "../components/Cards/Card";
+import Footer from "../Footer/Footer";
 
 function HomePage() {
   const [properties, setProperties] = useState([]);
@@ -28,6 +29,7 @@ function HomePage() {
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

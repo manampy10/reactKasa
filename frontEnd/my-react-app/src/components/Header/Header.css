@@ -5,12 +5,10 @@
 }
 
 .navbar-content {
-  max-width: 1240px;
-  margin: 0 800px 0 auto;
+  width: 1280px;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  width: 100%;
 }
 
 .logo {
