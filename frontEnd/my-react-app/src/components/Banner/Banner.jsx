@@ -1,10 +1,13 @@
-// src/components/Banner/Banner.jsx
 import "./Banner.css";
 
-function Banner() {
+function Banner({ text, image }) {
+  const style = {
+    backgroundImage: `url(${image})`,
+  };
+
   return (
-    <div className="banner">
-      <h1>Chez vous, partout et ailleurs</h1>
+    <div className="banner" style={style}>
+      {text && <h1>{text}</h1>}
     </div>
   );
 }

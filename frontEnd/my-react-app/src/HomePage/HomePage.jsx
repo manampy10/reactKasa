@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Banner from "../components/Banner/Banner";
 import Card from "../components/Cards/Card";
 import Footer from "../Footer/Footer";
+import bannerAccueil from "../logo/banner.png";
 
 function HomePage() {
   const [properties, setProperties] = useState([]);
@@ -19,7 +20,7 @@ function HomePage() {
   return (
     <div className="homepage">
       <Header />
-      <Banner />
+      <Banner text="Chez vous, partout et ailleurs" image={bannerAccueil} />
       <div className="card-list">
         {properties.map((property) => (
           <Card
