@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Collapse.css";
+import arrowIcon from "../../logo/arrowIcon.png";
 
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,15 +14,11 @@ function Collapse({ title, children }) {
         onClick={toggle}
       >
         <h2>{title}</h2>
-        <span
-          style={{
-            transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-            transition: "transform 0.3s ease",
-            fontSize: "1.5rem",
-          }}
-        >
-          ˄
-        </span>
+        <img
+          src={arrowIcon}
+          alt="toggle arrow"
+          className={`arrow-icon ${isOpen ? "open" : ""}`}
+        />
       </div>
       {isOpen && (
         <div className="collapse-content">

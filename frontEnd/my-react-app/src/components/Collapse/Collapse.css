@@ -23,7 +23,6 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-
 .collapse-content {
   background-color: #f6f6f6;
   padding: 1rem;
@@ -32,6 +31,18 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   animation: fadeIn 0.3s ease-in-out;
+  text-align: left;
+}
+
+.arrow-icon {
+  width: 28px;
+  transition: transform 0.3s ease;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.arrow-icon.open {
+  transform: rotate(180deg);
 }
 
 @keyframes fadeIn {
