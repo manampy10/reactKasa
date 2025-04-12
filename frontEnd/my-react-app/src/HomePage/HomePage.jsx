@@ -21,14 +21,16 @@ function HomePage() {
     <div className="homepage">
       <Header />
       <Banner text="Chez vous, partout et ailleurs" image={bannerAccueil} />
-      <div className="card-list">
-        {properties.map((property) => (
-          <Card
-            key={property.id}
-            title={property.title}
-            cover={property.cover}
-          />
-        ))}
+      <div className="card-list-container">
+        <div className="card-list">
+          {properties.map((property) => (
+            <Card
+              key={property.id}
+              title={property.title}
+              cover={property.cover}
+            />
+          ))}
+        </div>
       </div>
       <Footer />
     </div>
