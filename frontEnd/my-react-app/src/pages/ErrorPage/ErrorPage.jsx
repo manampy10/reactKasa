@@ -6,7 +6,6 @@ import "./ErrorPage.css";
 function ErrorPage() {
   return (
     <div className="error-page">
-      <Header />
       <main className="error-main">
         <h1 className="error-code">404</h1>
         <p className="error-message">
@@ -16,7 +15,6 @@ function ErrorPage() {
           Retourner sur la page d’accueil
         </Link>
       </main>
-      <Footer />
     </div>
   );
 }

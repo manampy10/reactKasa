@@ -19,7 +19,6 @@ function HomePage() {
 
   return (
     <div className="homepage">
-      <Header />
       <Banner text="Chez vous, partout et ailleurs" image={bannerAccueil} />
       <div className="card-list-container">
         <div className="card-list">
@@ -32,7 +31,6 @@ function HomePage() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

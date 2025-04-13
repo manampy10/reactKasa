@@ -9,7 +9,6 @@ import "./AboutPage.css";
 function AboutPage() {
   return (
     <div className="about-page">
-      <Header />
       <Banner image={bannerAbout} />
       <main className="about-content">
         <Collapse title="Fiabilité">
@@ -36,7 +35,6 @@ function AboutPage() {
           sur la sécurité domestique pour nos hôtes.
         </Collapse>
       </main>
-      <Footer />
     </div>
   );
 }
