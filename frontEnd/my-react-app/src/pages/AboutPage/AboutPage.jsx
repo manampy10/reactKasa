@@ -1,6 +1,3 @@
-// src/pages/AboutPage/AboutPage.jsx
-import Header from "../../components/Header/Header";
-import Footer from "../../Footer/Footer";
 import Collapse from "../../components/Collapse/Collapse";
 import Banner from "../../components/Banner/Banner";
 import bannerAbout from "../../logo/Image source 2.png";
