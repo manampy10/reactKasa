@@ -25,10 +25,12 @@
 
 .arrow.left {
   left: 20px;
+  height: 50px;
 }
 
 .arrow.right {
   right: 20px;
+  height: 50px;
 }
 
 .slide-count {
