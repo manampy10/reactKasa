@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Collapse from "../../components/Collapse/Collapse";
+import ErrorPage from "../ErrorPage/ErrorPage";
 import "./PropertyPageCarrousel.css";
 
 function PropertyPageCarrousel() {
@@ -23,7 +24,7 @@ function PropertyPageCarrousel() {
     return (
       <>
         <div className="not-found">
-          Ce logement n'existe pas ou est en cours de chargement.
+          <ErrorPage />
         </div>
       </>
     );
