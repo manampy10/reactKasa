@@ -1,10 +1,8 @@
 // src/pages/HomePage/HomePage.jsx
 import "./HomePage.css";
 import { useEffect, useState } from "react";
-import Header from "../components/Header/Header";
 import Banner from "../components/Banner/Banner";
 import Card from "../components/Cards/Card";
-import Footer from "../Footer/Footer";
 import bannerAccueil from "../logo/banner.png";
 
 function HomePage() {
@@ -25,6 +23,7 @@ function HomePage() {
           {properties.map((property) => (
             <Card
               key={property.id}
+              id={property.id}
               title={property.title}
               cover={property.cover}
             />
